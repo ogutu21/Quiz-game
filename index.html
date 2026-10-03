@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quiz Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <!-- Header -->
+
+        <header class="quiz-header">
+
+            <div>
+                <h1>Quiz Game</h1>
+                <p>Test your knowledge</p>
+            </div>
+
+            <button
+                id="themeButton"
+                title="Toggle theme"
+            >
+                🌙
+            </button>
+
+        </header>
+
+
+        <!-- Quiz Information -->
+
+        <section class="quiz-info">
+
+            <span id="questionNumber">
+                Question 1 of 10
+            </span>
+
+            <span id="score">
+                Score: 0
+            </span>
+
+        </section>
+
+
+        <!-- Progress Bar -->
+
+        <div class="progress-container">
+
+            <div
+                id="progressBar"
+                class="progress-bar"
+            ></div>
+
+        </div>
+
+
+        <!-- Question -->
+
+        <section class="question-card">
+
+            <h2 id="question">
+                Question goes here
+            </h2>
+
+            <div id="answers" class="answers">
+
+                <!-- Answers will be added by JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Feedback -->
+
+        <div
+            id="feedback"
+            class="feedback"
+        ></div>
+
+
+        <!-- Next Button -->
+
+        <button
+            id="nextButton"
+            class="next-button"
+        >
+            Next Question
+        </button>
+
+
+        <!-- Result -->
+
+        <section
+            id="result"
+            class="result hidden"
+        >
+
+            <h2>Quiz Complete! 🎉</h2>
+
+            <p>Your final score is:</p>
+
+            <div id="finalScore">
+                0 / 10
+            </div>
+
+            <p id="resultMessage">
+                Well done!
+            </p>
+
+            <button
+                id="restartButton"
+                class="restart-button"
+            >
+                Play Again
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
